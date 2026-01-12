@@ -1,0 +1,47 @@
+# PDF toolkit environment
+name: pdf_env
+
+channels:
+#  - nvidia  # if install CUDA version torch related dependencies
+#  - pytorch  # if using conda to install pytorch related dependencies
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+# install torch related dependencies by conda
+#  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
+#  - torchvision
+#  - torchaudio
+# install other dependencies by pip
+  - pip
+  - pip:
+# utils
+    - notebook
+    - ipywidgets
+
+# main
+    - pymupdf
+    - pymupdf4llm
+    - docling
+    - marker-pdf
+
+
+# path
+    - pathlib
+    - omegaconf
+
+# log
+    - loguru
+
+# test
+    - pytest
+
+
+#    - -r pip_requirements/_env.txt
+#    - -r pip_requirements/another_config_file.txt
+#  - run:
+#      - ./conda_finish.sh
+
+# conda env create --file=./conda_specific_projects/pdf/pdf_env.yaml
+

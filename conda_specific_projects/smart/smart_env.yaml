@@ -30,8 +30,11 @@ dependencies:
     - langchain-openai  # openai client. for ChatOpenAI
     - langchain-huggingface  # huggingface endpoint
     - langchain-ollama
-### loader
-### vector store
+### loading
+### embedding
+    - sentence-transformers
+    - einops
+### storing
     - langchain-chroma
 
 

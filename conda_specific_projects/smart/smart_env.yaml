@@ -34,6 +34,9 @@ dependencies:
 ### embedding
     - sentence-transformers
     - einops
+    - pillow  # for jina-embeddings-v4
+    - peft  # for jina-embeddings-v4
+    - torchvision  # for jina-embeddings-v4
 ### storing
     - langchain-chroma
 

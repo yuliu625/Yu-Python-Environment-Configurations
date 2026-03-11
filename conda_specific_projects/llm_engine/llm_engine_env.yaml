@@ -19,16 +19,19 @@ dependencies:
 # utils
     - notebook
     - ipywidgets
+    - loguru
+
 
 # main
-## core frameworks / the engines
-    - vllm
-#    - tensorrt-llm
+## core frameworks / inference engines
+#    - vllm
 #    - sglang
+#    - tensorrt-llm
 #    - text-generation-inference
 #    - lmdeploy
-## servers
-#    - fastapi
+    - litserve
+## gateway
+    - litellm[proxy]
 
 
 # path

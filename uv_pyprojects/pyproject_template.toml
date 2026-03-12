@@ -1,0 +1,26 @@
+[project]
+name = "uv-project"
+version = "0.1.0"
+description = "UV projects configuration file template."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    ## utils
+    "notebook",
+    "ipywidgets",
+    ## log
+    "loguru",
+    ## path
+    "pathlib",
+    "omegaconf",
+]
+
+[dependency-groups]
+dev = [
+    # tests
+    "pytest",
+]
+
+[tool.uv]
+#default-groups = [""]
+

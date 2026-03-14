@@ -1,0 +1,67 @@
+[project]
+name = "uv-project"
+version = "0.1.0"
+description = "Base data science project."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # ==== Base ====
+    ## utils
+    "notebook",
+    "ipywidgets",
+    ## log
+    "loguru",
+    ## path
+    "pathlib",
+    "omegaconf",
+    ## tests
+    "pytest",
+
+
+    # ==== main ====
+    ## data processing, analysis, modeling
+    "polars",
+    "pandas", "pandas-stubs",
+    "scipy", "scipy-stubs",
+    "statsmodels",
+    "scikit-learn",  # sklearn
+
+    ## pipeline
+#    "luigi",
+#    "snakemake",
+#    "apache-airflow",
+
+    # ==== compatibility ====
+    ## json related
+    "orjson",
+    "ujson",
+    ## xlsx
+#    "openyxl",
+    "xlsxwriter",
+]
+
+
+[dependency-groups]
+# regression analysis
+## specially for linear regression
+regression = [
+    "tabuleone",
+]
+# text analysys
+text = [
+    "nltk",
+    "spacy",
+#    "gensim",
+    "jieba",
+]
+# visualization
+visualization = [
+#    "matplotlib",
+#    "seaborn",
+    "plotly", "kaleido",
+]
+
+
+[tool.uv]
+#default-groups = [""]
+

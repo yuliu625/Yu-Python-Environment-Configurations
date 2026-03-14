@@ -16,6 +16,7 @@ dependencies = [
     "omegaconf",
     ## tests
     "pytest",
+    "pytest-asyncio",  # if only asyncio instead of anyio
 ]
 
 
@@ -24,6 +25,11 @@ dev = [
 
 ]
 
+
 [tool.uv]
 #default-groups = [""]
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
 

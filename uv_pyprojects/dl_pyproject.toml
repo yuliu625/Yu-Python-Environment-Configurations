@@ -16,16 +16,13 @@ dependencies = [
     "omegaconf",
     ## tests
     "pytest",
+    "pytest-asyncio",  # if only asyncio instead of anyio
 
     # ==== main ====
     ## ==== torch related ====
     "torch",
 #    "torchvision",
 #    "torchaudio",
-
-    ## ==== lightning ====
-    "lightning",
-    "torchmetrics",
 
     ## ==== logger ====
     "wandb",
@@ -62,8 +59,37 @@ training = [
     # audio
 #    "soundfile",
 ]
+# lightning related
+lightning = [
+    # ==== main ====
+    ## ==== lightning ====
+    "lightning",
+    "torchmetrics",
+]
+# transformers related
+transformers = [
+    # ==== main ====
+    ## ==== transformers ====
+    ### base
+    "transformers",
+#    "sentence-transformers",
+    ### dataset
+    "datasets",
+    ### training
+    "accelerate",
+    "trl",
+    "peft",
+    ### evaluation
+    "lighteval",
+    ## ==== integration tools ====
+    "unsloth",
+]
 
 
 [tool.uv]
 #default-groups = [""]
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
 

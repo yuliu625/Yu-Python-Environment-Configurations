@@ -1,0 +1,29 @@
+[project]
+name = "llm-engine-project"
+version = "0.1.0"
+description = "LLM engine project."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # ==== Base ====
+    ## utils
+    "notebook",
+    "ipywidgets",
+    ## log
+    "loguru",
+    ## path
+    "pathlib",
+    "omegaconf",
+    ## tests
+    "pytest",
+]
+
+
+[dependency-groups]
+dev = [
+
+]
+
+[tool.uv]
+#default-groups = [""]
+

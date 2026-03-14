@@ -1,5 +1,5 @@
 [project]
-name = "uv-project"
+name = "ds-project"
 version = "0.1.0"
 description = "Base data science project."
 readme = "README.md"

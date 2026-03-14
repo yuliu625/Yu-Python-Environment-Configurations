@@ -16,6 +16,7 @@ dependencies = [
     "omegaconf",
     ## tests
     "pytest",
+    "pytest-asyncio",  # if only asyncio instead of anyio
 
 
     # ==== main ====
@@ -33,11 +34,10 @@ dependencies = [
 
     # ==== compatibility ====
     ## json related
-    "orjson",
-    "ujson",
+    "orjson", "ujson",  # for json & jsonlines
     ## xlsx
 #    "openyxl",
-    "xlsxwriter",
+    "fastexcel", "xlsxwriter",  # for polars
 ]
 
 
@@ -64,4 +64,8 @@ visualization = [
 
 [tool.uv]
 #default-groups = [""]
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
 

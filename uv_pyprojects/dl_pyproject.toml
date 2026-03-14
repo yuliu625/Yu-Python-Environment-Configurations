@@ -1,10 +1,11 @@
 [project]
 name = "dl-project"
 version = "0.1.0"
-description = "UV projects configuration file template."
+description = "Base deep learning project."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    # ==== Base ====
     ## utils
     "notebook",
     "ipywidgets",
@@ -13,26 +14,55 @@ dependencies = [
     ## path
     "pathlib",
     "omegaconf",
-    # main
-    ## torch
+    ## tests
+    "pytest",
+
+    # ==== main ====
+    ## ==== torch related ====
     "torch",
 #    "torchvision",
 #    "torchaudio",
-    ## lightning
+
+    ## ==== lightning ====
     "lightning",
     "torchmetrics",
-    ## logger
+
+    ## ==== logger ====
     "wandb",
     "tensorboard",
-    ## config
+    ## ==== config ====
     "hydra-core",
 ]
 
+
 [dependency-groups]
-dev = [
-    # tests
-    "pytest",
+# data processing
+data = [
+    # structured data
+    "polars",
+#    "pandas",
+    # stream data
+    "jsonlines",
+    # compatibility
+    ## json related
+    "orjson",
+    "ujson",
+    ## xlsx
+#    "openyxl",
 ]
+# training models
+training = [
+    # ==== nlp ====
+#    "sentencepiece",
+
+    # ==== cv ====
+#    "opencv-python",
+#    "moviepy",
+
+    # audio
+#    "soundfile",
+]
+
 
 [tool.uv]
 #default-groups = [""]

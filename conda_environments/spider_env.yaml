@@ -3,7 +3,7 @@ name: spider_env
 
 channels:
   - conda-forge
-  - defaults
+  - nodefaults
 
 dependencies:
   - python=3.13

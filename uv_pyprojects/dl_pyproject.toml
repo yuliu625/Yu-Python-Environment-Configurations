@@ -14,9 +14,6 @@ dependencies = [
     ## path
     "pathlib",
     "omegaconf",
-    ## tests
-    "pytest",
-    "pytest-asyncio",  # if only asyncio instead of anyio
 
     # ==== main ====
     ## ==== torch related ====
@@ -84,10 +81,45 @@ transformers = [
     ## ==== integration tools ====
     "unsloth",
 ]
+# Development
+dev = [
+    # ==== Linting and Formatting ====
+    "ruff",
+#    "mypy",
+#    "pyright",
+    # ==== Debugging and Dev Productivity ====
+#    "ipython",
+#    "pre-commit",
+]
+# Tests
+test = [
+    # pytest
+    "pytest",
+    "pytest-asyncio",  # if only asyncio instead of anyio
+]
+# Documents
+docs = [
+    # Sphinx
+#    "sphinx",
+#    "sphinx-rtd-theme",
+#    "myst-parser",
+    # MkDocs
+#    "mkdocs",
+#    "mkdocs-material",
+#    "mkdocstrings",
+]
 
 
 [tool.uv]
-#default-groups = [""]
+default-groups = ["dev", "test", ]
+
+
+[tool.ruff]
+select = ["E", "F", ]
+ignore = [
+    "F401",
+]
+format.quote-style = "preserve"
 
 
 [tool.pytest.ini_options]

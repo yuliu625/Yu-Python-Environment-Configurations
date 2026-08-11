@@ -13,55 +13,56 @@ dependencies = [
     "loguru",
     ## path
     "pathlib",
-#    "omegaconf",
-    # ==== main ====
-    ## data processing, analysis, modeling
+    # "omegaconf",
+
+    # ===== Main =====
+    ## Data Processing, Analysis, Modeling
     "polars",
-    "pandas", "pandas-stubs",
+    # "pandas", "pandas-stubs",
     "scipy", "scipy-stubs",
     "statsmodels",
     "scikit-learn",  # sklearn
-    ## pipeline
-#    "luigi",
-#    "snakemake",
-#    "apache-airflow",
-    # ==== compatibility ====
-    ## json related
+    ## Pipeline
+    # "luigi",
+    # "snakemake",
+    # "apache-airflow",
+    # ==== Compatibility ====
+    ## Json Related
     "orjson", "ujson",  # for json & jsonlines
     ## xlsx
-#    "openyxl",
+    # "openyxl",
     "fastexcel", "xlsxwriter",  # for polars
 ]
 
 
 [dependency-groups]
-# regression analysis
-## specially for linear regression
+# Regression Analysis
+## Linear Regression
 regression = [
     "tabuleone",
 ]
-# text analysys
+# Text Analysys
 text = [
     "nltk",
     "spacy",
-#    "gensim",
+    # "gensim",
     "jieba",
 ]
-# visualization
+# Visualization
 visualization = [
-#    "matplotlib",
-#    "seaborn",
+    # "matplotlib",
+    # "seaborn",
     "plotly", "kaleido",
 ]
 # Development
 dev = [
-    # ==== Linting and Formatting ====
+    # ===== Linting and Formatting =====
     "ruff",
-#    "mypy",
-#    "pyright",
-    # ==== Debugging and Dev Productivity ====
-#    "ipython",
-#    "pre-commit",
+    # "mypy",
+    # "pyright",
+    # ===== Debugging and Dev Productivity =====
+    # "ipython",
+    # "pre-commit",
 ]
 # Tests
 test = [
@@ -72,13 +73,13 @@ test = [
 # Documents
 docs = [
     # Sphinx
-#    "sphinx",
-#    "sphinx-rtd-theme",
-#    "myst-parser",
+    # "sphinx",
+    # "sphinx-rtd-theme",
+    # "myst-parser",
     # MkDocs
-#    "mkdocs",
-#    "mkdocs-material",
-#    "mkdocstrings",
+    # "mkdocs",
+    # "mkdocs-material",
+    # "mkdocstrings",
 ]
 
 

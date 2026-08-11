@@ -5,7 +5,7 @@ description = "UV projects configuration file template."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    # ==== Base ====
+    # ===== Base =====
     ## utils
     "notebook",
     "ipywidgets",
@@ -13,21 +13,22 @@ dependencies = [
     "loguru",
     ## path
     "pathlib",
-#    "omegaconf",
-    # ==== Main ====
+    # "omegaconf",
+    
+    # ===== Main =====
 ]
 
 
 [dependency-groups]
 # Development
 dev = [
-    # ==== Linting and Formatting ====
+    # ===== Linting and Formatting =====
     "ruff",
-#    "mypy",
-#    "pyright",
-    # ==== Debugging and Dev Productivity ====
-#    "ipython",
-#    "pre-commit",
+    # "mypy",
+    # "pyright",
+    # ===== Debugging and Dev Productivity =====
+    # "ipython",
+    # "pre-commit",
 ]
 # Tests
 test = [
@@ -38,13 +39,13 @@ test = [
 # Documents
 docs = [
     # Sphinx
-#    "sphinx",
-#    "sphinx-rtd-theme",
-#    "myst-parser",
+    # "sphinx",
+    # "sphinx-rtd-theme",
+    # "myst-parser",
     # MkDocs
-#    "mkdocs",
-#    "mkdocs-material",
-#    "mkdocstrings",
+    # "mkdocs",
+    # "mkdocs-material",
+    # "mkdocstrings",
 ]
 
 

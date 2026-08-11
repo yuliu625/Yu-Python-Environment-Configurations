@@ -15,26 +15,25 @@ dependencies = [
     "pathlib",
     "omegaconf",
 
-    # ==== main ====
-    ## ==== torch related ====
+    # ===== Main =====
+    ## ===== Torch =====
     "torch",
-#    "torchvision",
-#    "torchaudio",
-
-    ## ==== logger ====
+    # "torchvision",
+    # "torchaudio",
+    ## ===== Logger =====
     "wandb",
     "tensorboard",
-    ## ==== config ====
+    ## ===== Config =====
     "hydra-core",
 ]
 
 
 [dependency-groups]
-# data processing
+# Data Processing
 data = [
     # structured data
     "polars",
-#    "pandas",
+    # "pandas", "pandas-stubs",
     # stream data
     "jsonlines",
     # compatibility
@@ -42,54 +41,52 @@ data = [
     "orjson",
     "ujson",
     ## xlsx
-#    "openyxl",
+    # "openyxl",
 ]
-# training models
+# Training
 training = [
-    # ==== nlp ====
-#    "sentencepiece",
-
-    # ==== cv ====
-#    "opencv-python",
-#    "moviepy",
-
-    # audio
-#    "soundfile",
+    # ===== NLP =====
+    # "sentencepiece",
+    # ===== CV =====
+    # "opencv-python",
+    # "moviepy",
+    # ===== Audio =====
+    # "soundfile",
 ]
-# lightning related
+# Lightning
 lightning = [
-    # ==== main ====
-    ## ==== lightning ====
+    # ===== Main =====
+    ## ===== Lightning =====
     "lightning",
     "torchmetrics",
 ]
-# transformers related
+# tTransformers
 transformers = [
-    # ==== main ====
-    ## ==== transformers ====
-    ### base
+    # ===== Main =====
+    ## ===== Transformers =====
+    ### Base
     "transformers",
-#    "sentence-transformers",
-    ### dataset
+    # "sentence-transformers",
+    ### Dataset
     "datasets",
-    ### training
+    ### Training
     "accelerate",
     "trl",
     "peft",
-    ### evaluation
+    ### Evaluation
     "lighteval",
-    ## ==== integration tools ====
+    ## ===== Integration Tools =====
     "unsloth",
 ]
 # Development
 dev = [
-    # ==== Linting and Formatting ====
+    # ===== Linting and Formatting =====
     "ruff",
-#    "mypy",
-#    "pyright",
-    # ==== Debugging and Dev Productivity ====
-#    "ipython",
-#    "pre-commit",
+    # "mypy",
+    # "pyright",
+    # ===== Debugging and Dev Productivity =====
+    # "ipython",
+    # "pre-commit",
 ]
 # Tests
 test = [
@@ -100,13 +97,13 @@ test = [
 # Documents
 docs = [
     # Sphinx
-#    "sphinx",
-#    "sphinx-rtd-theme",
-#    "myst-parser",
+    # "sphinx",
+    # "sphinx-rtd-theme",
+    # "myst-parser",
     # MkDocs
-#    "mkdocs",
-#    "mkdocs-material",
-#    "mkdocstrings",
+    # "mkdocs",
+    # "mkdocs-material",
+    # "mkdocstrings",
 ]
 
 

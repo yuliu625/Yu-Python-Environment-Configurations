@@ -1,0 +1,22 @@
+// Yu's Minimal VS Code Python Extension Recommendations
+// Customize and adjust according to specific project requirements
+{
+    "recommendations": [
+        // Core Python Language Support
+        "ms-python.python",
+        // LSP
+        "astral-sh.ty",  // Primary LSP: daily development
+        // "detachhead.basedpyright",  // Backup LSP: strict type checking and advanced refactoring
+        // Git Workflow Enhancements
+        "vivaxy.vscode-conventional-commits",
+        // "eamodio.gitlens",
+        // Code Quality & Formatting
+        "streetsidesoftware.code-spell-checker",
+        // AI Assistance
+        "continue.continue",
+    ],
+    "unwantedRecommendations": [
+
+    ]
+}
+
